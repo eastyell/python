@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>博文列表</h1>
+<a href="/admin/blog/blog/add/">写博文</a>
+<a href="/hello">
+    <button>点我跳转到hello！</button>
+</a>
+<ul>
+    {% for b in blogs %}
+    <li><a href="/blog/?id={{b.id}}">{{b.title}}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
